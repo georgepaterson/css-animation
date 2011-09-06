@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en-GB" dir="ltr">
+	<head>
+		<title>CSS Animation Talk</title>
+		<meta charset="utf-8">
+		<style>
+			#character {
+				position: relative;
+			}
+			#character img {
+				position: absolute;
+				top: 0;
+				left: 0;
+			}
+			@-moz-keyframes open {
+				0% {
+					opacity: 1;
+				}
+				9% {
+					opacity: 1;
+				}
+				10% {
+					opacity: 0;
+				}
+				15% {
+					opacity: 0;
+				}
+				16% {
+					opacity: 1;
+				}
+				19% {
+					opacity: 1;
+				}
+				20% {
+					opacity: 0;
+				}
+				25% {
+					opacity: 0;
+				}
+				26% {
+					opacity: 1;
+				}
+				29% {
+					opacity: 1;
+				}
+				30% {
+					opacity: 0;
+				}
+				35% {
+					opacity: 0;
+				}
+				36% {
+					opacity: 1;
+				}
+				39% {
+					opacity: 1;
+				}
+				40% {
+					opacity: 0;
+				}
+				45% {
+					opacity: 0;
+				}
+				46% {
+					opacity: 1;
+				}
+				49% {
+					opacity: 1;
+				}
+				40% {
+					opacity: 0;
+				}
+				55% {
+					opacity: 0;
+				}
+				56% {
+					opacity: 1;
+				}
+				100% {
+					opacity: 1;
+				}
+			}
+			@-moz-keyframes ohh {
+				0% {
+					opacity: 1;
+				}
+				19% {
+					opacity: 1;
+				}
+				20% {
+					opacity: 0;
+				}
+				25% {
+					opacity: 0;
+				}
+				26% {
+					opacity: 1;
+				}
+				29% {
+					opacity: 1;
+				}
+				30% {
+					opacity: 0;
+				}
+				35% {
+					opacity: 0;
+				}
+				36% {
+					opacity: 1;
+				}
+				39% {
+					opacity: 1;
+				}
+				40% {
+					opacity: 0;
+				}
+				45% {
+					opacity: 0;
+				}
+				46% {
+					opacity: 1;
+				}
+				100% {
+					opacity: 1;
+				}
+			}
+			@-moz-keyframes speak-1 {
+				0% {
+					opacity: 1;
+				}
+				29% {
+					opacity: 1;
+				}
+				30% {
+					opacity: 0;
+				}
+				35% {
+					opacity: 0;
+				}
+				36% {
+					opacity: 1;
+				}
+				100% {
+					opacity: 1;
+				}
+			}
+			#open {
+				-moz-animation: open 2s infinite normal forwards;
+			}
+			#ohh {
+				-moz-animation: ohh 2s infinite normal forwards;
+			}
+			#speak-1 {
+				-moz-animation: speak-1 2s infinite normal forwards;
+			}
+		</style>
+	</head>
+	<body>	
+		<div id="page">
+			<div id="character">
+				<img id="speak-2" src="image/speak-2.jpg" width="385" height="385" alt="Speak 2">
+				<img id="speak-1" src="image/speak-1.jpg" width="385" height="385" alt="Speak 1">
+				<img id="ohh" src="image/ohh.jpg" width="385" height="385" alt="Ohh">
+				<img id="open" src="image/smile.jpg" width="385" height="385" alt="Smile">
+			</div>
+		</div>
+	</body>
+</html>

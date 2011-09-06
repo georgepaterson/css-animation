@@ -3,11 +3,70 @@
 	<head>
 		<title>CSS Animation Blink</title>
 		<meta charset="utf-8">
-
+		<style>
+			#character {
+				position: relative;
+			}
+			#character img {
+				position: absolute;
+				top: 0;
+				left: 0;
+			}
+			@-moz-keyframes blink {
+				0% {
+					opacity: 1;
+				}
+				9% {
+					opacity: 1;
+				}
+				10% {
+					opacity: 0;
+				}
+				11% {
+					opacity: 1;
+				}
+				29% {
+					opacity: 1;
+				}
+				30% {
+					opacity: 0;
+				}
+				31% {
+					opacity: 1;
+				}
+				64% {
+					opacity: 1;
+				}
+				65% {
+					opacity: 0;
+				}
+				66% {
+					opacity: 1;
+				}
+				69% {
+					opacity: 1;
+				}
+				70% {
+					opacity: 0;
+				}
+				71% {
+					opacity: 1;
+				}
+				100% {
+					opacity: 1;
+				}
+			}
+			#open {
+				-moz-animation: blink 10s infinite normal forwards;
+			}
+		</style>
 	</head>
 	<body>	
 		<div id="page">
-
+			<div id="character">
+				<img id="closed" src="image/closed.jpg" width="385" height="385" alt="Closed">
+				<img id="open" src="image/open.jpg" width="385" height="385" alt="Open">
+			</div>
 		</div>
 	</body>
 </html>
